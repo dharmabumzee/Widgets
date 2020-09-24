@@ -5,6 +5,8 @@ const Search = () => {
   const [term, setTerm] = useState("programming");
   const [results, setResults] = useState([]);
 
+  console.log(results);
+
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       if (term) {
