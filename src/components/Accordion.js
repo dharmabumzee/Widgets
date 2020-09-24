@@ -1,9 +1,9 @@
 import React from "react";
 
-const Accordion = () => {
+const Accordion = ({ items }) => {
   return (
     <div>
-      <h1>Accordion</h1>
+      <h1>{items.length}</h1>
     </div>
   );
 };
