@@ -9,7 +9,7 @@ const Link = ({ className, href, children }) => {
     event.preventDefault();
     window.history.pushState({}, "", href);
 
-    // this communicates over to those route components that the url has changed
+    // this communicates over to route components that the url has changed
     const navEvent = new PopStateEvent("popstate");
     window.dispatchEvent(navEvent);
   };
